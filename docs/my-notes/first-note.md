@@ -41,14 +41,25 @@ git push
 ```
 4. `npm run deploy`
 
-基礎必學 :git(上傳 下載)
-nvm node.js管理器(切換不同版本)
-npm 套件管理器
-還有其他套件管理器 npm是最基本的
+備註:  
+1. 以HTTPS下載要變更Project的Remote URL  
+`git remote set-url origin git@github.com:s10215118/notes.git`
+2. 查看當前Remote URL  
+`git remote -v`
+3. 在GitHub上開新的Repo執行以下指令可以上傳本地Git專案
+```
+git remote add origin https://github.com/s10215118/notes.git
+git branch -M main
+git push -u origin main
+```
 
 
-開repositories
-VSCode 最左側 原始檔控制
-npm start - 開啟本地檔案
+nvm node.js管理器(切換不同版本)  
+npm 套件管理器(還有其他套件管理器 npm是最基本的)  
+MarkDown通常用來寫ReadMe檔案給別人看
 
-code . 開啟VSCode
+
+開啟本地檔案  
+`npm start`  
+CMD開啟VSCode  
+`code .`
