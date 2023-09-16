@@ -1,0 +1,17 @@
+version: '3.8'
+
+name: notes-docs
+
+services:
+
+  docs:
+    hostname: notes-docs
+    image: "notes-docs"
+    container_name: notes-docs
+    build: .
+    volumes:
+      - .:/home/node/app
+    ports:
+      - "9999:80"
+    stdin_open: true
+    tty: true
