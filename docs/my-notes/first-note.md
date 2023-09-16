@@ -33,12 +33,13 @@ nvm use 18
 ## Part3.修改功能及部署
 1. 在docs資料夾新增my-notes資料夾
 2. 複製tutorial-basics的_category.json和任意.md到my-notes資料夾
-3. ```
+3. 
+```
 git add .
 git commit -m "add notes"
 git push
 ```
-4. 
+4. `npm run deploy`
 
 基礎必學 :git(上傳 下載)
 nvm node.js管理器(切換不同版本)
